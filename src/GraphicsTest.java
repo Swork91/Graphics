@@ -11,6 +11,7 @@ public class GraphicsTest extends JFrame {
 		GraphicsTest frame = new GraphicsTest();
 		frame.setTitle("Phone");
 		frame.setSize(360, 640);
+		//frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		frame.setVisible(true);
@@ -24,6 +25,6 @@ class NewPanel extends JPanel{
 		super.paintComponent(g);
 		g.drawLine(0, 0, 50, 50);
 		g.drawString("Banner", 0, 40);
-		g.fillRect(0, 0, 600, 600);
+		//g.fillRect(0, 0, 600, 600);
 	}
 }

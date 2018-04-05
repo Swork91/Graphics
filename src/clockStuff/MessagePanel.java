@@ -3,8 +3,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MessagePanel extends JPanel{
-	private int xCoordinate = 0;
-	private int yCoordinate = 0;
+	private int xCoordinate = 20;
+	private int yCoordinate = 20;
 	private boolean centered;
 	private String message = "Default Message";
 	private int interval = 10;

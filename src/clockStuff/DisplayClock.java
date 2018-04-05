@@ -13,7 +13,7 @@ public class DisplayClock extends JFrame{
 		
 		//digital display
 		MessagePanel messagePanel = new MessagePanel(clock.getHour() + ":" + clock.getMinute() + ":" + clock.getSecond());
-		messagePanel.setCentered(false);
+		messagePanel.setCentered(true);
 		messagePanel.setForeground(Color.blue);
 		messagePanel.setFont(new Font("courier", Font.BOLD, 16));
 		
@@ -25,7 +25,8 @@ public class DisplayClock extends JFrame{
 	public static void main(String[] args) {
 		DisplayClock frame = new DisplayClock();
 		frame.setTitle("DisplayClock");
-		frame.setSize(600, 650);
+		//frame.setSize(600, 650);
+		frame.pack();
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		frame.setVisible(true);
